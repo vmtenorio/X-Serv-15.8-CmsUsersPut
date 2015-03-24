@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Script de comprobación de entrega de ejercicio
+Script de comprobaciÃ³n de entrega de ejercicio
 
 Para ejecutarlo, desde la shell:
  $ python check.py login_github
@@ -13,7 +13,7 @@ import os
 import random
 import sys
 
-ejercicio = 'X-Serv-15.6-Django-CMS_PUT'
+ejercicio = 'X-Serv-15.8-CmsUsersPut'
 
 student_projname = 'myproject'
 student_appname = 'cms_users_put'
@@ -66,7 +66,7 @@ for root, dirs, files in os.walk('/tmp/' + aleatorio):
 
 if len(github_files) != len(student_files) + len(repo_files):
     error = 1
-    print "Error: número de ficheros en el repositorio incorrecto"
+    print "Error: nÃºmero de ficheros en el repositorio incorrecto"
 
     for filename in student_files:
         if filename not in github_files:
